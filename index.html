@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miro</title>
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/all.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-thin.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-solid.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-regular.css">
+
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.5.1/css/sharp-light.css">
+    <link rel="stylesheet" href="./owl.carousel.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./tailwind.config.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+        @font-face {
+            font-family: "Helvetica";
+            src: url(./fonts/Helvetica.ttf);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- =============navbar section============= -->
+    <nav class="fixed z-10 w-full left-0 top-0 py-5 bg-white shadow-sm  ">
+        <div class=" max-w-[1380px] mx-auto px-3 xxl:px-0">
+            <div class="flex justify-between items-center lg:items-center">
+                <div class="lg:flex items-center ">
+                    <div class="logo pe-6 pb-3">
+                        <a class="" href="#"><img src="./images/logo.png" alt="logo"></a>
+                    </div>
+                    <menu class="lg:flex gap-x-5 mt-5 lg:mt-0 transition-all duration-300 hidden">
+                        <li class="dropdown relative group py-3">
+                            <a href="#"
+                                class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300">Product
+                                <i class="fa-regular fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu top-full absolute w-[200px] hidden bg-white shadow-md rounded-md">
+                                <li><a href="#"
+                                        class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm  hover:bg-gray-100">Product
+                                        1
+                                    </a></li>
+                                <li><a href="#"
+                                        class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm  hover:bg-gray-200">Product
+                                        2</a></li>
+                                <li><a href="#"
+                                        class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm  hover:bg-gray-200">Product
+                                        3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown relative group py-3">
+                            <a href="#"
+                                class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 ">Solutions
+                                <i class="fa-regular fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu absolute top-full w-[200px] hidden bg-white shadow-md rounded-md">
+                                <li><a href="#"
+                                        class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm  hover:bg-gray-100">Solutions
+                                        1
+                                    </a></li>
+                                <li><a href="#"
+                                        class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm  hover:bg-gray-200">Solutions
+                                        2</a></li>
+                                <li><a href="#"
+                                        class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm  hover:bg-gray-200">Solutions
+                                        3</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown relative group py-3">
+                            <a href="#"
+                                class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 ">Resources
+                                <i class="fa-regular fa-chevron-down"></i></a>
+                            <ul class="dropdown-menu absolute top-full w-[200px] hidden bg-white shadow-md rounded-md">
+                                <li><a href="#"
+                                        class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm  hover:bg-gray-100">Resources
+                                        1
+                                    </a></li>
+                                <li><a href="#"
+                                        class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm  hover:bg-gray-200">Resources
+                                        2</a></li>
+                                <li><a href="#"
+                                        class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm  hover:bg-gray-200">Resources
+                                        3</a></li>
+                            </ul>
+                        </li>
+                        <li class="py-3">
+                            <a class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300"
+                                href="#banner">Enterprise </a>
+                        </li>
+                        <li class="py-3">
+                            <a class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300"
+                                href="#banner">Pricing </a>
+                        </li>
+                    </menu>
+                </div>
+
+                <div class="flex gap-x-4 items-center">
+                    <div class="hidden sm:flex gap-x-4 items-center">
+                        <a class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300"
+                            href="#">Contact Sales</a>
+                        <a class="text-textColour hover:text-blue font-Helvetica font-normal text-base transition-all duration-300"
+                            href="#">Login</a>
+                        <a class="bg-blue text-white font-Helvetica py-4 px-6 rounded-full justify-center flex items-center transition-all duration-300 ease-linear"
+                            href="#">Signn Up Free <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                    </div>
+
+                    <span id="mobile-menu-toggle" class="lg:hidden pt-1"><i class="fa-solid fa-bars"></i></span>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+    <div id="mobile-menu"
+        class="   items-center  bg-textColour fixed hidden h-screen max-h-screen overflow-y-auto xsm:clear-both w-2/3 max-w-[calc(100vw_-_60px)] z-[9999]   xsm:transition-all  xsm:left-0 xsm:top-0 xsm:visible  show">
+        <div class="">
+            <div class="flex justify-between p-4">
+                <div class="logo pe-6">
+                    <a class="" href="#"><img src="./images/logo2.png" alt=""></a>
+                </div>
+                <button id="mobile-menu-close" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <menu class="lg:flex gap-x-5 mt-5 lg:mt-0 transition-all duration-300 ps-4">
+                <li class="dropdown relative group py-3">
+                    <a href="#"
+                        class=" text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300">Product
+                        <i class="fa-regular fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu top-full left-10  w-[200px] hidden  bg-textColour shadow-md rounded-md">
+                        <li><a href="#"
+                                class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm ">Product
+                                1
+                            </a></li>
+                        <li><a href="#"
+                                class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm ">Product
+                                2</a></li>
+                        <li><a href="#"
+                                class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm ">Product
+                                3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown relative group py-3">
+                    <a href="#"
+                        class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 ">Solutions
+                        <i class="fa-regular fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu  top-full w-[200px] hidden bg-textColour shadow-md rounded-md">
+                        <li><a href="#"
+                                class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm ">Solutions
+                                1
+                            </a></li>
+                        <li><a href="#"
+                                class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm ">Solutions
+                                2</a></li>
+                        <li><a href="#"
+                                class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm ">Solutions
+                                3</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown relative group py-3">
+                    <a href="#"
+                        class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 ">Resources
+                        <i class="fa-regular fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu top-full w-[200px] hidden bg-textColour shadow-md rounded-md">
+                        <li><a href="#"
+                                class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm ">Resources
+                                1
+                            </a></li>
+                        <li><a href="#"
+                                class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm ">Resources
+                                2</a></li>
+                        <li><a href="#"
+                                class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300 block px-4 py-2 text-sm ">Resources
+                                3</a></li>
+                    </ul>
+                </li>
+                <li class="py-3">
+                    <a class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300"
+                        href="#banner">Enterprise </a>
+                </li>
+                <li class="py-3">
+                    <a class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300"
+                        href="#banner">Pricing </a>
+                </li>
+            </menu>
+            <div class="flex flex-col gap-y-4 ps-4 sm:hidden">
+                <a class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300"
+                    href="#">Contact Sales</a>
+                <a class="text-white hover:text-blue font-Helvetica font-normal text-base transition-all duration-300"
+                    href="#">Login</a>
+                <a class="bg-blue text-white font-Helvetica py-4 px-6 max-w-[200px] rounded-md flex  justify-center  items-center transition-all duration-300 ease-linear"
+                    href="#">Signn Up Free <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==============banner section=============== -->
+    <section id="banner" class="pt-[173px] pb-[82px]">
+        <div class="max-w-[1120px] mx-auto px-3 xl:px-0">
+            <div class="grid grid-cols-1 space-y-10 lg:grid-cols-12 items-center justify-between">
+                <div class="lg:col-span-5">
+                    <div class="text-center lg:text-left">
+                        <h1 class="font-inter text-4xl lg:text-5xl font-bold leading-[56px] pb-4 tracking-[-1px]">Take
+                            ideas from
+                            better to best
+                        </h1>
+                        <p class="font-Helvetica text-lg font-normal leading-6 pb-8">Miro is your team's visual platform
+                            to
+                            connect, <br> collaborate, and create — together.</p>
+                        <form class="flex flex-col items-center flex-wrap gap-3 justify-center" action="">
+                            <input class="w-full sm:w-[440px] border rounded-full px-6 py-3 outline-none" type="text"
+                                autocomplete="email" name="email" placeholder="Enter your work email">
+                            <button
+                                class="bg-blue text-white font-Helvetica  py-4 w-full sm:w-[440px] rounded-full justify-center flex items-center transition-all duration-300 ease-linear"
+                                href="#">Signn Up Free <i class="fa-thin fa-arrow-right-long ps-2"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="lg:col-span-7">
+                    <div class="flex justify-center">
+                        <picture>
+                            <img src="./images/banner.jpg" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================Trusted section usig owl carousel============= -->
+    <section class="py-10 md:py-[60px]">
+        <div class="max-w-[1120px] mx-auto px-3 xl:px-0">
+            <h6 class="font-inter text-center text-textColour opacity-60 text-lg font-normal leading-6 pb-10">Trusted by
+                45M+ users</h6>
+            <div class="owl-carousel mb-7" id="slider1">
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-full object-contain" src="./images/Walmart.png" alt="">
+                    </picture>
+                </div>
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-16 object-contain" src="./images/volvo.png" alt="">
+                    </picture>
+                </div>
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-16 object-contain" src="./images/okta.png" alt="">
+                    </picture>
+                </div>
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-16 object-contain" src="./images/deloitte.png" alt="">
+                    </picture>
+                </div>
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-16 object-contain" src="./images/volvo.png" alt="">
+                    </picture>
+                </div>
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-16 object-contain" src="./images/okta.png" alt="">
+                    </picture>
+                </div>
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-16 object-contain" src="./images/volvo.png" alt="">
+                    </picture>
+                </div>
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-16 object-contain" src="./images/okta.png" alt="">
+                    </picture>
+                </div>
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-16 object-contain" src="./images/deloitte.png" alt="">
+                    </picture>
+                </div>
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-16 object-contain" src="./images/volvo.png" alt="">
+                    </picture>
+                </div>
+                <div class="h-16 w-24 mx-auto">
+                    <picture>
+                        <img class="h-16 object-contain" src="./images/okta.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================feature section=================== -->
+    <section id="feature" class="py-10 md:py-20 ">
+        <div class="max-w-[1120px] mx-auto px-3 xl:px-0">
+            <div class="relative">
+                <span
+                    class="bg-yellow rotate-12 shadow-2xl font-bold text-blackc py-2 px-3 rounded-md absolute right-20 -top-5 hidden md:block">YOUR
+                    IDEA STARTS
+                    HERE</span>
+                <h2 class="font-inter text-4xl lg:text-5xl font-bold leading-[56px] pb-9 tracking-[-1px] text-center">
+                    without <br>
+                    constraints</h2>
+            </div>
+
+            <div class="feature_wrapper">
+                <div class="grid justify-center lg:grid-cols-12 space-y-10 lg:space-y-0 lg:space-x-10 mb-20">
+                    <div class="col-span-4 text-center lg:text-left max-w-[600px]">
+                        <h4 class="font-inter text-textColour text-2xl font-bold leading-7 pb-7 tracking-[-.5px]">Free
+                            forever</h4>
+                        <p class="font-Helvetica text-textColour text-lg font-normal leading-6">Our
+                            free plan gives you unlimited team members, 3 boards, and 300+ expert-made
+                            templates. Signing up with your work email lets you bring in your team faster. See our
+                            <a class="text-blue" href="#">pricing plans</a> for more features.
+                        </p>
+                    </div>
+                    <div class="col-span-4 text-center lg:text-left max-w-[600px]">
+                        <h4 class="font-inter text-textColour text-2xl font-bold leading-7 pb-7 tracking-[-.5px]">Easy
+                            integrations</h4>
+                        <p class="font-Helvetica text-textColour text-lg font-normal leading-6">Miro has 100+ powerful
+                            integrations with tools you already use like G Suite, Slack, and Jira, so your workflow is
+                            seamless. View the full list in our <a class="text-blue" href="#">Marketplace</a> .
+                        </p>
+                    </div>
+                    <div class="col-span-4 text-center lg:text-left max-w-[600px]">
+                        <h4 class="font-inter text-textColour text-2xl font-bold leading-7 pb-7 tracking-[-.5px]">
+                            Security first</h4>
+                        <p class="font-Helvetica text-textColour text-lg font-normal leading-6">We treat your data like
+                            you would — with the utmost care. We follow industry-leading security standards and give you
+                            tools to protect intellectual property. Learn more
+                            at our <a class="text-blue" href="#">Trust Center</a> .</p>
+                    </div>
+                </div>
+                <div class="flex justify-center items-center">
+                    <a class="bg-blue text-white font-Helvetica py-4 px-6 rounded-full justify-center flex  transition-all duration-300 ease-linear"
+                        href="#">Signn Up Free <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ========================work  section================= -->
+    <section id="work">
+        <div class="max-w-[1120px] mx-auto px-3 xl:px-0">
+            <div class="grid grid-cols-1 space-y-10 lg:grid-cols-12 items-center">
+                <div class="lg:col-span-5">
+                    <div class="text-center lg:text-left">
+                        <h1
+                            class="font-inter text-textColour text-4xl lg:text-5xl font-bold leading-[56px] pb-4 tracking-[-1px]">
+                            Work
+                            together, wherever you work
+                        </h1>
+                        <p
+                            class="font-inter text-textColour opacity-60 text-lg font-normal leading-6 pb-10 max-w-[600px] mx-auto">
+                            In the
+                            office, remote, or a mix of
+                            the two, with Miro, your team can connect, collaborate, and co-create in one space no matter
+                            where you are.</p>
+                        <a class="font-inter text-blue underline text-lg font-normal leading-6" href="#">Learn more <i
+                                class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 lg:col-start-7">
+                    <div class="h-[535px]">
+                        <picture>
+                            <img class="h-full mx-auto object-cover" src="./images/hybridwork.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========================tools section================= -->
+    <section id="tools" class="py-10 md:py-20">
+        <div class="max-w-[1120px] mx-auto px-3 xl:px-0">
+            <div class="grid grid-cols-1 space-y-10 lg:grid-cols-12 items-center">
+                <div class=" lg:col-span-6 order-2 lg:order-1">
+                    <div class="h-[535px]">
+                        <picture>
+                            <img class="h-full mx-auto object-cover" src="./images/integrations.png" alt="">
+                        </picture>
+                    </div>
+                </div>
+                <div class="lg:col-start-8 lg:col-span-5 order-1 lg:order-2">
+                    <div class="text-center lg:text-left">
+                        <h2
+                            class="font-inter text-textColour text-4xl lg:text-5xl font-bold leading-[56px] pb-4 tracking-[-1px]">
+                            Connect <br>
+                            your tools,<br>
+                            close your tabs
+                        </h2>
+                        <p
+                            class="font-inter text-textColour opacity-60 text-lg font-normal leading-6 pb-10 max-w-[600px] mx-auto">
+                            Whether you
+                            want to edit your Google Docs, resolve Jira issues, or collaborate over Zoom, Miro has 100+
+                            integrations with tools you already use and love.</p>
+                        <a class="font-inter text-blue underline text-lg font-normal leading-6" href="#">Learn more <i
+                                class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ===============report section=================== -->
+    <section id="report">
+        <div class="max-w-[1020px] overflow-hidden mx-auto px-3 xl:px-0">
+            <div class="relative w-full h-[500px]" style="
+            background: url(./images/work.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            ">
+                <!-- <div class="">
+                    <picture>
+                        <img src="./images/work.jpg" alt="">
+                    </picture>
+                </div> -->
+                <div class="max-w-[350px] text-center absolute right-10 top-1/2 -translate-y-1/2">
+                    <h5 class="font-inter text-textColour text-2xl font-bold leading-6 pb-2 tracking-[-.5px]">The Ways
+                        We Work</h5>
+                    <p class="font-inter text-textColour text-lg font-normal leading-6 pb-2">How has our
+                        relationship with work changed?</p>
+                    <div class="flex justify-center items-center">
+                        <a class="bg-blue text-white font-Helvetica py-4 px-6 rounded-full justify-center flex  transition-all duration-300 ease-linear"
+                            href="#">View the report <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ====================Nav Tabs section================== -->
+    <section id="nab_tab" class="py-10 md:py-20">
+        <div class="max-w-[1120px] mx-auto px-3 md:p-[30px]">
+            <h2 class="font-inter text-textColour text-4xl lg:text-5xl font-bold leading-[56px] pb-4 tracking-[-1px]">
+                Built for the way you work
+            </h2>
+            <div class="flex justify-center items-center mt-10">
+                <nav class="flex flex-wrap gap-1 justify-center lg:gap-4">
+                    <button
+                        class="tab-btn text-textColour text-sm bg-[#F1F3FD]  px-4 py-3 rounded-full border focus:outline-none">Brainstorming</button>
+                    <button
+                        class="tab-btn text-textColour text-sm  px-4 py-3 rounded-full border focus:outline-none">Diagramming</button>
+                    <button
+                        class="tab-btn text-textColour text-sm  px-4 py-3 rounded-full border focus:outline-none">Meetings
+                        &
+                        Workshops</button>
+                    <button
+                        class="tab-btn text-textColour text-sm  px-4 py-3 rounded-full border focus:outline-none">Scrum
+                        Events</button>
+                    <button
+                        class="tab-btn text-textColour text-sm  px-4 py-3 rounded-full border focus:outline-none">Mapping</button>
+                    <button
+                        class="tab-btn text-textColour text-sm  px-4 py-3 rounded-full border focus:outline-none">Research
+                        &
+                        Design</button>
+                    <button
+                        class="tab-btn text-textColour text-sm  px-4 py-3 rounded-full border focus:outline-none">Strategic
+                        Planning</button>
+                </nav>
+            </div>
+
+            <div class="tab-content mt-14">
+                <div id="tab1" class="tab-item">
+                    <div
+                        class="grid grid-cols-1 space-x-0 md:space-x-5 lg:space-x-0  space-y-10 md:space-y-0 md:grid-cols-12">
+                        <div class="md:col-span-4">
+                            <div class="text-center md:text-left">
+                                <p class="font-Helvetica text-textColour text-lg leading-6 pb-7">
+                                    Brainstorming
+                                </p>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-70 text-lg font-normal leading-6 pb-9 md:max-w-[300px]">
+                                    In
+                                    the
+                                    office, remote, or a mix of
+                                    the two, with Miro, your team can connect, collaborate, and co-create in one space
+                                    no matter
+                                    where you are.</p>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                            </div>
+                        </div>
+                        <div class=" md:col-span-8">
+                            <div class=" md:h-[535px]">
+                                <picture>
+                                    <img class="h-full mx-auto img-fluid" src="./images/Brainstorm.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab2" class="tab-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-x-0 md:space-x-5 lg:space-x-0 space-y-10 md:space-y-0 md:grid-cols-12">
+                        <div class="md:col-span-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-Helvetica text-textColour text-lg leading-6 pb-7">
+                                    Diagramming
+                                </p>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-70 text-lg font-normal leading-6 pb-9 md:max-w-[300px]">
+                                    In
+                                    the
+                                    office, remote, or a mix of
+                                    the two, with Miro, your team can connect, collaborate, and co-create in one space
+                                    no matter
+                                    where you are.</p>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                            </div>
+                        </div>
+                        <div class=" md:col-span-8">
+                            <div class="md:h-[535px]">
+                                <picture>
+                                    <img class="h-full img-fluid mx-auto" src="./images/Brainstorm.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab3" class="tab-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-x-0 md:space-x-5 lg:space-x-0 space-y-10 md:space-y-0 md:grid-cols-12">
+                        <div class="md:col-span-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-Helvetica text-textColour text-lg leading-6 pb-7">
+                                    Meetings &
+                                    Workshops
+                                </p>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-70 text-lg font-normal leading-6 pb-9 md:max-w-[300px]">
+                                    In
+                                    the
+                                    office, remote, or a mix of
+                                    the two, with Miro, your team can connect, collaborate, and co-create in one space
+                                    no matter
+                                    where you are.</p>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                            </div>
+                        </div>
+                        <div class=" md:col-span-8">
+                            <div class="md:h-[535px]">
+                                <picture>
+                                    <img class="h-full img-fluid mx-auto" src="./images/Brainstorm.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab4" class="tab-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-x-0 md:space-x-5 lg:space-x-0 space-y-10 md:space-y-0 md:grid-cols-12">
+                        <div class="md:col-span-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-Helvetica text-textColour text-lg leading-6 pb-7">
+                                    Scrum
+                                    Events
+                                </p>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-70 text-lg font-normal leading-6 pb-9 md:max-w-[300px]">
+                                    In
+                                    the
+                                    office, remote, or a mix of
+                                    the two, with Miro, your team can connect, collaborate, and co-create in one space
+                                    no matter
+                                    where you are.</p>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="md:h-[535px]">
+                                <picture>
+                                    <img class="h-full img-fluid mx-auto" src="./images/Brainstorm.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab5" class="tab-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-x-0 md:space-x-5 lg:space-x-0 space-y-10 md:space-y-0 md:grid-cols-12">
+                        <div class="md:col-span-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-Helvetica text-textColour text-lg leading-6 pb-7">
+                                    Mapping
+                                </p>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-70 text-lg font-normal leading-6 pb-9 md:max-w-[300px]">
+                                    In
+                                    the
+                                    office, remote, or a mix of
+                                    the two, with Miro, your team can connect, collaborate, and co-create in one space
+                                    no matter
+                                    where you are.</p>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="md:h-[535px]">
+                                <picture>
+                                    <img class="h-full img-fluid mx-auto" src="./images/Brainstorm.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab6" class="tab-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-x-0 md:space-x-5 lg:space-x-0 space-y-10 md:space-y-0 md:grid-cols-12">
+                        <div class="md:col-span-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-Helvetica text-textColour text-lg leading-6 pb-7">
+                                    Research &
+                                    Design
+                                </p>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-70 text-lg font-normal leading-6 pb-9 md:max-w-[300px]">
+                                    In
+                                    the
+                                    office, remote, or a mix of
+                                    the two, with Miro, your team can connect, collaborate, and co-create in one space
+                                    no matter
+                                    where you are.</p>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="md:h-[535px]">
+                                <picture>
+                                    <img class="h-full img-fluid mx-auto" src="./images/Brainstorm.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab7" class="tab-item hidden">
+                    <div class="grid grid-cols-1 space-y-10 lg:space-y-0 lg:grid-cols-12">
+                        <div class="md:col-span-4">
+                            <div class="text-center lg:text-left">
+                                <p class="font-Helvetica text-textColour text-lg leading-6 pb-7">
+                                    Strategic
+                                    Planning
+                                </p>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-70 text-lg font-normal leading-6 pb-9 md:max-w-[300px]">
+                                    In
+                                    the
+                                    office, remote, or a mix of
+                                    the two, with Miro, your team can connect, collaborate, and co-create in one space
+                                    no matter
+                                    where you are.</p>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="md:h-[535px]">
+                                <picture>
+                                    <img class="h-full img-fluid mx-auto" src="./images/Brainstorm.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =================category section=============== -->
+    <section id="category" class="py-10 md:py-20">
+        <div class="max-w-[1120px] mx-auto px-3 md:p-[30px]">
+            <h2 class="font-inter text-textColour text-4xl lg:text-5xl font-bold leading-[56px] pb-4 tracking-[-1px]">
+                Built for all kinds of teams
+            </h2>
+            <div class="flex justify-center items-center mt-10">
+                <nav class="flex flex-wrap justify-center gap-1 lg:gap-4">
+                    <button class="cat-btn text-textColour font-Helvetica bg-[#F1F3FD] px-4 py-3 rounded-full border
+                        focus:outline-none">UX & Design</button>
+                    <button
+                        class="cat-btn text-textColour  px-4 py-3 rounded-full border focus:outline-none">Marketing</button>
+                    <button class="cat-btn text-textColour  px-4 py-3 rounded-full border focus:outline-none">Product
+                        Management</button>
+                    <button
+                        class="cat-btn text-textColour  px-4 py-3 rounded-full border focus:outline-none">Engineering</button>
+                    <button
+                        class="cat-btn text-textColour  px-4 py-3 rounded-full border focus:outline-none">Consultants</button>
+                    <button class="cat-btn text-textColour  px-4 py-3 rounded-full border focus:outline-none">Agile
+                        Coaches</button>
+                    <button
+                        class="cat-btn text-textColour  px-4 py-3 rounded-full border focus:outline-none">Sales</button>
+                </nav>
+            </div>
+
+            <div class="tab-content mt-14">
+                <div id="cat1" class="cat-item">
+                    <div
+                        class="grid grid-cols-1 space-y-10 md:space-y-0 md:grid-cols-12 space-x-0 md:space-x-5 lg:space-x-0">
+                        <div class="md:col-span-4 max-w-[300px]">
+                            <div class="">
+                                <ul class="pb-8">
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Build low-fi wireframes</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Involve stakeholders in the design process</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Run engaging design workshops</p>
+
+                                    </li>
+                                </ul>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pt-16 pb-3">
+                                    Integrate your favorite tools</p>
+                                <div class="flex gap-x-5">
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools1.png" alt="tools1">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools2.png" alt="tools2">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools3.png" alt="tools3">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools4.png" alt="tools4">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="h-[535px]">
+                                <picture>
+                                    <img class="h-full object-cover mx-auto" src="./images/uxdesign.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cat2" class="cat-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-y-10 md:space-y-0 md:grid-cols-12 space-x-0 md:space-x-5 lg:space-x-0">
+                        <div class="md:col-span-4 max-w-[300px]">
+                            <div class="">
+                                <ul class="pb-8">
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Involve stakeholders in the design process</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Build low-fi wireframes</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Run engaging design workshops</p>
+
+                                    </li>
+                                </ul>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pt-16 pb-3">
+                                    Integrate your favorite tools</p>
+                                <div class="flex gap-x-5">
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools1.png" alt="tools1">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools2.png" alt="tools2">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools3.png" alt="tools3">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools4.png" alt="tools4">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="h-[535px]">
+                                <picture>
+                                    <img class="h-full object-cover mx-auto" src="./images/uxdesign.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cat3" class="cat-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-y-10 md:space-y-0 md:grid-cols-12 space-x-0 md:space-x-5 lg:space-x-0">
+                        <div class="md:col-span-4 max-w-[300px]">
+                            <div class="">
+                                <ul class="pb-8">
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Build low-fi wireframes</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Involve stakeholders in the design process</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Run engaging design workshops</p>
+
+                                    </li>
+                                </ul>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pt-16 pb-3">
+                                    Integrate your favorite tools</p>
+                                <div class="flex gap-x-5">
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools1.png" alt="tools1">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools2.png" alt="tools2">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools3.png" alt="tools3">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools4.png" alt="tools4">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="h-[535px]">
+                                <picture>
+                                    <img class="h-full object-cover mx-auto" src="./images/uxdesign.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cat4" class="cat-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-y-10 md:space-y-0 md:grid-cols-12 space-x-0 md:space-x-5 lg:space-x-0">
+                        <div class="md:col-span-4 max-w-[300px]">
+                            <div class="">
+                                <ul class="pb-8">
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Involve stakeholders in the design process</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Build low-fi wireframes</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Run engaging design workshops</p>
+
+                                    </li>
+                                </ul>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pt-16 pb-3">
+                                    Integrate your favorite tools</p>
+                                <div class="flex gap-x-5">
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools1.png" alt="tools1">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools2.png" alt="tools2">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools3.png" alt="tools3">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools4.png" alt="tools4">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="h-[535px]">
+                                <picture>
+                                    <img class="h-full object-cover mx-auto" src="./images/uxdesign.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cat5" class="cat-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-y-10 md:space-y-0 md:grid-cols-12 space-x-0 md:space-x-5 lg:space-x-0">
+                        <div class="md:col-span-4 max-w-[300px]">
+                            <div class="">
+                                <ul class="pb-8">
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Build low-fi wireframes</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Involve stakeholders in the design process</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Run engaging design workshops</p>
+
+                                    </li>
+                                </ul>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pt-16 pb-3">
+                                    Integrate your favorite tools</p>
+                                <div class="flex gap-x-5">
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools1.png" alt="tools1">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools2.png" alt="tools2">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools3.png" alt="tools3">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools4.png" alt="tools4">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="h-[535px]">
+                                <picture>
+                                    <img class="h-full object-cover mx-auto" src="./images/uxdesign.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cat6" class="cat-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-y-10 md:space-y-0 md:grid-cols-12 space-x-0 md:space-x-5 lg:space-x-0">
+                        <div class="md:col-span-4 max-w-[300px]">
+                            <div class="">
+                                <ul class="pb-8">
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Involve stakeholders in the design process</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Build low-fi wireframes</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Run engaging design workshops</p>
+
+                                    </li>
+                                </ul>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pt-16 pb-3">
+                                    Integrate your favorite tools</p>
+                                <div class="flex gap-x-5">
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools1.png" alt="tools1">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools2.png" alt="tools2">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools3.png" alt="tools3">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools4.png" alt="tools4">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="h-[535px]">
+                                <picture>
+                                    <img class="h-full object-cover mx-auto" src="./images/uxdesign.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cat7" class="cat-item hidden">
+                    <div
+                        class="grid grid-cols-1 space-y-10 md:space-y-0 md:grid-cols-12 space-x-0 md:space-x-5 lg:space-x-0">
+                        <div class="md:col-span-4 max-w-[300px]">
+                            <div class="">
+                                <ul class="pb-8">
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Build low-fi wireframes</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Involve stakeholders in the design process</p>
+
+                                    </li>
+                                    <li
+                                        class="flex items-start font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pb-4">
+                                        <i class="fas fa-check pr-3"></i>
+                                        <p>Run engaging design workshops</p>
+
+                                    </li>
+                                </ul>
+                                <a class="font-inter text-blue text-lg font-normal leading-6" href="#">Learn
+                                    more <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                                <p
+                                    class="font-Helvetica text-textColour opacity-60 text-lg font-normal leading-6 pt-16 pb-3">
+                                    Integrate your favorite tools</p>
+                                <div class="flex gap-x-5">
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools1.png" alt="tools1">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools2.png" alt="tools2">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools3.png" alt="tools3">
+                                        </picture>
+                                    </div>
+                                    <div class="">
+                                        <picture>
+                                            <img src="./images/tools4.png" alt="tools4">
+                                        </picture>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:col-span-8">
+                            <div class="h-[535px]">
+                                <picture>
+                                    <img class="h-full object-cover mx-auto" src="./images/uxdesign.jpg" alt="">
+                                </picture>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =====================testimony section=================== -->
+    <section id="testimony" class="py-10 md:py-20 ">
+        <div class="max-w-[1120px] mx-auto px-3 xl:px-0">
+            <div>
+                <h2 class="font-inter text-4xl lg:text-5xl font-bold leading-[56px] pb-9 tracking-[-1px] text-center">
+                    Loved by the world's best teams</h2>
+                <div class="flex justify-center items-center pb-20">
+                    <a class="text-blue border font-Helvetica py-4 px-6 rounded-full flex justify-center items-center transition-all duration-300 ease-linear"
+                        href="#">See all customer stories <i class="fa-thin fa-arrow-right-long ps-2"></i></a>
+                </div>
+            </div>
+            <div class="testimony_wrapper">
+                <div class="owl-carousel grid justify-center lg:grid-cols-12 space-y-10 lg:space-y-0 lg:space-x-10"
+                    id="slider2">
+                    <div class="col-span-4 max-w-[400px] mx-auto h-[370px] relative">
+                        <div class="pb-8">
+                            <picture>
+                                <img class="h-14 " src="./images/vmware.png" alt="">
+                            </picture>
+                        </div>
+                        <p class="font-Helvetica text-textColour text-lg font-normal leading-6">“When the pandemic hit,
+                            those of us who thrive on in-person collaboration were worried that our creativity and
+                            productivity would suffer. Miro was the perfect tool to help us with collaboration,
+                            whiteboarding, and retrospectives while remote.”
+                        </p>
+                        <div class="absolute bottom-0 flex items-center space-x-4">
+                            <div class="h-12 w-12 rounded-full">
+                                <picture>
+                                    <img src="./images/user_1.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <span
+                                    class="font-Helvetica text-textColour opacity-60 text-sm font-normal leading-5">Roxanne
+                                    Mustafa</span>
+                                <span
+                                    class=" font-Helvetica text-textColour opacity-60 text-sm font-normal leading-5">Design
+                                    Team Lead at VMware</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 max-w-[400px] mx-auto h-[370px] relative">
+                        <div class="pb-8">
+                            <picture>
+                                <img class="h-14" src="./images/Docusign.png" alt="">
+                            </picture>
+                        </div>
+                        <p class="font-Helvetica text-textColour text-lg font-normal leading-6">“Miro helps solve one of
+                            the major gaps in product design: how to manage tasks across product designers whose
+                            projects are in different tools.”
+                        </p>
+                        <div class="absolute bottom-0 flex items-center space-x-4">
+                            <div class="h-12 w-12 rounded-full">
+                                <picture>
+                                    <img src="./images/user_2.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <span
+                                    class="font-Helvetica text-textColour opacity-60 text-sm font-normal leading-5">Jane
+                                    Ashley</span>
+                                <span
+                                    class=" font-Helvetica text-textColour opacity-60 text-sm font-normal leading-5">Head
+                                    of Design at DocuSign</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-4 max-w-[400px] mx-auto h-[370px] relative">
+                        <div class="pb-8">
+                            <picture>
+                                <img class="h-14" src="./images/frog.png" alt="">
+                            </picture>
+                        </div>
+                        <p class="font-Helvetica text-textColour text-lg font-normal leading-6">“As we used Miro we
+                            moved from skepticism to belief to innovation, and now we have a tool that’s at the core of
+                            what we do and will continue to extend into the future.”</p>
+                        <div class="absolute bottom-0 flex items-center space-x-4">
+                            <div class="h-12 w-12 rounded-full">
+                                <picture>
+                                    <img src="./images/user_3.png" alt="">
+                                </picture>
+                            </div>
+                            <div class="flex flex-col space-y-2">
+                                <span
+                                    class="font-Helvetica text-textColour opacity-60 text-sm font-normal leading-5">Laura
+                                    Baird</span>
+                                <span
+                                    class=" font-Helvetica text-textColour opacity-60 text-sm font-normal leading-5">Associate
+                                    Design Director at frog</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- ====================footer section================ -->
+    <footer class="bg-textColour py-10 md:py-24">
+        <div class="max-w-[1056px] mx-auto px-5 xl:px-0">
+            <div class="grid justify-center sm:grid-cols-12 space-y-10 sm:space-y-0 space-x-5 lg:space-x-10">
+                <div class="col-span-12 sm:col-span-8 md:col-span-4 max-w-[600px]">
+                    <h5 class="font-inter text-white text-2xl font-extrabold leading-[30px] pb-12 ">Scan.
+                        Detect. Remove.</h5>
+                    <div class="flex space-x-4 mb-12">
+                        <a class="h-9 w-9 flex items-center justify-center rounded-md bg-white" href="#"><i
+                                class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a class="h-9 w-9 flex items-center justify-center rounded-md bg-white" href="#"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a class="h-9 w-9 flex items-center justify-center rounded-md bg-white" href="#"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <div class="space-x-6">
+                        <a class="text-white text-[11px] underline font-inter font-normal leading-4" href="#">Privacy
+                            Policy</a>
+                        <a class="text-white text-[11px] underline font-inter font-normal leading-4" href="#">Terms of
+                            Service</a>
+                    </div>
+                    <p class="max-w-[306px] text-white text-[11px] font-inter font-normal leading-4 pt-12 ">Copyright ©
+                        2022 Certo
+                        Software Limited |
+                        Registered in England & Wales No. 10072356</p>
+                    <p class="text-white text-[11px] font-inter font-normal leading-4 pt-5">Designed & developed by <a
+                            class="underline" href="#">Bigger Picture</a></p>
+                </div>
+                <div class="col-span-12 sm:col-span-4 md:col-span-3">
+                    <h2
+                        class="font-inter font-extrabold text-4xl pb-6 leading-[45px] text-white relative after:absolute after:content-[''] after:-bottom-0 after:h-[1px] after:w-[178px] after:bg-white after:left-0">
+                        Miro.</h2>
+                    <menu class="pt-14  sm:space-y-6 gap-x-6  flex flex-wrap sm:block">
+                        <li>
+                            <a class="relative sm:ps-11 sm:before:absolute before:content-[''] before:left-0 before:h-[2px] before:w-[20px] before:bg-yellow before:top-1/2 text-yellow text-[19px] sm:font-extrabold tracking-[-.4px] leading-[25px]"
+                                href="#">iPhone</a>
+                        </li>
+                        <li>
+                            <a class="relative sm:ps-11 sm:before:absolute before:content-[''] before:left-0 before:h-[2px] before:w-[20px] before:bg-yellow before:top-1/2 text-yellow text-[19px] sm:font-extrabold tracking-[-.4px] leading-[25px]"
+                                href="#">Android</a>
+                        </li>
+
+                        <li>
+                            <a class="relative sm:ps-11 sm:before:absolute before:content-[''] before:left-0 before:h-[2px] before:w-[20px] before:bg-yellow before:top-1/2 text-yellow text-[19px] sm:font-extrabold tracking-[-.4px] leading-[25px]"
+                                href="#">Help</a>
+                        </li>
+                        <li>
+                            <a class="relative sm:ps-11 sm:before:absolute before:content-[''] before:left-0 before:h-[2px] before:w-[20px] before:bg-yellow before:top-1/2 text-yellow text-[19px] sm:font-extrabold tracking-[-.4px] leading-[25px]"
+                                href="#">About</a>
+                        </li>
+                        <li>
+                            <a class="relative sm:ps-11 sm:before:absolute before:content-[''] before:left-0 before:h-[2px] before:w-[20px] before:bg-yellow before:top-1/2 text-yellow text-[19px] sm:font-extrabold tracking-[-.4px] leading-[25px]"
+                                href="#">Insights</a>
+                        </li>
+                    </menu>
+                </div>
+                <div class="col-span-12 sm:col-span-12 md:col-span-5 sm:pt-10 md:pt-0">
+                    <div class="bg-yellow p-5 xl:p-9 rounded-[20px] xl:rounded-[42px]">
+                        <div class="">
+                            <h5 class="font-inter text-[#02033B] text-2xl font-extrabold leading-[30px] pb-5 ">Sign up
+                                to
+                                our newsletter</h5>
+                            <p class="font-inter text-[#02033B] text-base font-normal leading-5 pb-9 ">Receive the
+                                latest mobile security news, exclusive discounts & offers straight to your inbox!</p>
+                            <form class="space-y-5 sm:space-y-0 sm:flex" action="">
+                                <input
+                                    class="rounded-full sm:rounded-l-full sm:rounded-r-none h-9 w-full  px-4 outline-none"
+                                    type="text" autocomplete="email" placeholder="Email address" name="email">
+                                <button
+                                    class="font-inter font-extrabold text-base rounded-full sm:rounded-r-full sm:rounded-l-none px-7 h-9 text-white bg-textColour"
+                                    type="submit">Submit</button>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script src="./js/waypoints.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
